@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Test1" parallel="tests" thread-count="2">
+
+		<!-- Pass the Parameter here for method to pick -->
+		<parameter name="user" value="raghu"></parameter>
+		<parameter name="pass" value="123456"></parameter>
+
+		<classes>
+			<class name="Test_NG.Test1" />
+
+
+			<class name="Test_NG.Test2">
+				<!-- Including the methods in Class -->
+				<methods>
+					<include name="DB"></include>
+				</methods>
+			</class>
+
+			<class name="Test_NG.Parameterizing_From_TestNG" />
+		</classes>
+	</test>
+
+
+	<test name="Test2">
+		<classes>
+			<class name="Test_NG.Test3">
+
+				<!-- Excluding the methods Class -->
+				<methods>
+					<exclude name='T2'>
+					</exclude>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<!-- Test -->
+</suite> <!-- Suite -->
