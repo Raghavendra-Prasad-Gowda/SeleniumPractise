@@ -15,6 +15,13 @@ public class First {
 		String a=driver.findElement(By.xpath("//div[@class='lfloat _ohe']/div/div[@class='_5iyx']")).getText();
 		System.out.println(a);
 		
+		System.out.println("1");
+		System.out.println("1");
+		System.out.println("1");
+		System.out.println("1");
+		System.out.println("1");
+		System.out.println("1");
+		
 	}
 	
 

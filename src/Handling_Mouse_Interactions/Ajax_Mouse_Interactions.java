@@ -23,6 +23,7 @@ public class Ajax_Mouse_Interactions {
 		
 		a.moveToElement(driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']"))).click().keyDown(Keys.SHIFT).sendKeys("mObILE").doubleClick().build().perform();
 		
+		System.out.println("Mouse");
 
 	}
 
